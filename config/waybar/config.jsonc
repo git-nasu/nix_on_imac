@@ -6,6 +6,7 @@
 
     "modules-center": [
         "clock",
+        "custom/weather"
     ],
 
     "modules-right": [
@@ -149,6 +150,12 @@
             "default": ["", "", ""],
         },
         "on-click": "pavucontrol",
+    },
+
+    "custom/weather": {
+        "exec": "~/nixos-dotfiles/config/waybar/scripts/weather.sh",
+        "interval": 900, // 15 minutes
+        "return-type": "text"
     },
 
     "custom/power": {
